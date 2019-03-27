@@ -20,6 +20,7 @@
         }
         .left-nav {
             padding-left: 20px;
+            cursor: pointer;
         }
         .right-nav {
             padding-right: 20px;
@@ -33,6 +34,10 @@
             display: inline;
             padding: 0 10px;
             cursor: pointer;
+        }
+        .right-nav ul li a {
+            color: inherit;
+            text-decoration: inherit;
         }
         .right-nav ul li:first-child {
             font-weight: bold;
@@ -61,19 +66,12 @@
             font-family: Poppins, Helvetica, serif;
             font-size: 72px;
             font-weight: bold;
-            font-style: normal;
-            font-stretch: normal;
             line-height: 1.09;
-            letter-spacing: normal;
         }
         main section .cupcake-description-wrapper {
             margin-top: 60px;
             font-family: 'Open Sans', Helvetica, serif;
-            font-weight: normal;
-            font-style: normal;
-            font-stretch: normal;
             line-height: 1.67;
-            letter-spacing: normal;
             color: #303133;
         }
         main section p {
@@ -84,10 +82,7 @@
             font-family: Poppins, Helvetica, serif;
             font-size: 48px;
             font-weight: bold;
-            font-style: normal;
-            font-stretch: normal;
             line-height: 1.09;
-            letter-spacing: normal;
         }
         main section .cupcake-grid {
             display: grid;
@@ -105,10 +100,7 @@
             font-family: Poppins, Helvetica, serif;
             font-size: 16px;
             font-weight: bold;
-            font-style: normal;
-            font-stretch: normal;
             line-height: 1.48;
-            letter-spacing: normal;
             color: #303133;
             padding: 10px 0 0;
         }
@@ -129,20 +121,14 @@
             font-family: Poppins, Helvetica, serif;
             font-size: 60px;
             font-weight: bold;
-            font-style: normal;
-            font-stretch: normal;
             line-height: 1.13;
-            letter-spacing: normal;
             color: #ffffff;
         }
         section.best-ingredients-section div.best-ingredients-section-right {
             font-family: OpenSans, Helvetica, serif;;
             font-size: 16px;
             font-weight: bold;
-            font-style: normal;
-            font-stretch: normal;
             line-height: 1.67;
-            letter-spacing: normal;
             color: #ffffff;
         }
         section.best-ingredients-section div.best-ingredients-section-right p:last-child {
@@ -158,20 +144,13 @@
             font-family: Poppins, Helvetica, serif;
             font-size: 48px;
             font-weight: bold;
-            font-style: normal;
-            font-stretch: normal;
             line-height: 1.13;
-            letter-spacing: normal;
             color: #753a5b;
         }
         main .we-also-make-cake p {
             font-family: OpenSans, Helvetica, serif;;
             font-size: 16px;
-            font-weight: normal;
-            font-style: normal;
-            font-stretch: normal;
             line-height: 1.67;
-            letter-spacing: normal;
             color: #303133;
             margin-top: 20px;
         }
@@ -184,10 +163,7 @@
             font-family: Poppins, Helvetica, serif;
             font-size: 18px;
             font-weight: bold;
-            font-style: normal;
-            font-stretch: normal;
             line-height: 1.48;
-            letter-spacing: normal;
             text-align: right;
             color: #303133;
         }
@@ -214,6 +190,10 @@
             padding: 0 10px;
             cursor: pointer;
         }
+        footer .footer-wrapper .right-footer ul li a {
+            color: inherit;
+            text-decoration: inherit;
+        }
     </style>
 </head>
 <body>
@@ -221,14 +201,14 @@
     <header>
         <nav>
             <div class="left-nav">
-                <img class="nav-image" src="images/logo.png"/>
+                <a href="#"><img class="nav-image" src="images/logo.png"/></a>
             </div>
             <div class="right-nav">
                 <ul>
-                    <li>HOME</li>
-                    <li>ABOUT US</li>
-                    <li>UNSERE SORTEN</li>
-                    <li>CONTACT</li>
+                    <li><a href="#introduction">INTRODUCTION</a></li>
+                    <li><a href="#flavours">OUR FLAVOURS</a></li>
+                    <li><a href="#ingredients">INGREDIENTS</a></li>
+                    <li><a href="#cake">CAKE</a></li>
                 </ul>
             </div>
         </nav>
@@ -237,6 +217,7 @@
 
     <main>
         <section>
+            <a name="introduction"></a>
             <h1 class="introduction-heading">Berlin's best<br/>cupcakes!</h1>
             <section class="cupcake-description-wrapper">
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
@@ -246,6 +227,7 @@
         </section>
 
         <section>
+            <a name="flavours"></a>
             <h3 class="flavours-heading">Our Flavours</h3>
             <div class="cupcake-grid">
                 <figure>
@@ -278,7 +260,7 @@
 
     <section class="best-ingredients-section">
         <div class="best-ingredients-grid-wrapper">
-            <h3 class="best-ingredients-section-left">Only the best ingredients</h3>
+            <h3 class="best-ingredients-section-left">Only the best ingredients<a name="ingredients"></a></h3>
             <div class="best-ingredients-section-right">
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
                 <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis. Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.</p>
@@ -289,6 +271,7 @@
     <main>
         <div class="we-also-make-cake">
             <div class="we-also-make-cake-left">
+                <a name="cake"></a>
                 <h3>We also make cake!</h3>
                 <p>
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit.
@@ -306,14 +289,13 @@
     <footer>
         <div class="footer-wrapper">
             <div class="left-footer">
-                <img class="nav-image" src="images/logo.png"/>
+                <a href="#"><img class="nav-image" src="images/logo.png"/></a>
             </div>
             <div class="right-footer">
                 <ul>
-                    <li>Facebook</li>
-                    <li>Linkedin</li>
-                    <li>Instagram</li>
-                    <li>Twitter</li>
+                    <li><a href="https://www.facebook.com/careerfoundry">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/career_foundry/">Instagram</a></li>
+                    <li><a href="https://twitter.com/careerfoundry/">Twitter</a></li>
                 </ul>
             </div>
         </div>
