@@ -91,12 +91,13 @@
             display: grid;
             grid-template-rows: auto auto;
             grid-template-columns: auto auto auto;
-            grid-row-gap: 30px;
-            grid-column-gap: 30px;
+            grid-row-gap: 25px;
+            grid-column-gap: 25px;
+            margin-top: 60px;
         }
         main section .cupcake-grid figure img {
-            width: 250px;
-            height: 250px;
+            width: 240px;
+            height: 240px;
         }
         main section .cupcake-grid figure figcaption {
             font-family: Poppins, Helvetica, serif;
@@ -119,8 +120,8 @@
             margin: 0 auto;
             display: grid;
             grid-template-rows: auto;
-            grid-template-columns: 50% 50%;
-            grid-gap: 30px;
+            grid-template-columns: 48% 48%;
+            grid-gap: 25px;
         }
         section.best-ingredients-section h3.best-ingredients-section-left {
             font-family: Poppins, Helvetica, serif;
@@ -148,7 +149,7 @@
         main .we-also-make-cake {
             display: grid;
             grid-template-rows: auto;
-            grid-template-columns: 30% 70%;
+            grid-template-columns: 30% 65%;
             grid-column-gap: 30px;
         }
         main .we-also-make-cake h3 {
@@ -170,10 +171,46 @@
             line-height: 1.67;
             letter-spacing: normal;
             color: #303133;
+            margin-top: 20px;
         }
         main .we-also-make-cake figure img {
             max-width: 100%;
             height: auto;
+        }
+        main .we-also-make-cake figure figcaption {
+            float: right;
+            font-family: Poppins, Helvetica, serif;
+            font-size: 18px;
+            font-weight: bold;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.48;
+            letter-spacing: normal;
+            text-align: right;
+            color: #303133;
+        }
+        footer {
+            height: 100px;
+            background-color: #21667c;
+            margin-top: 150px;
+        }
+        footer .footer-wrapper {
+            max-width: 800px;
+            height: 100%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        footer .footer-wrapper .right-footer ul {
+            color: white;
+            list-style: none;
+            font-size: 14px;
+        }
+        footer .footer-wrapper .right-footer ul li {
+            display: inline;
+            padding: 0 10px;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -264,7 +301,21 @@
         </div>
     </main>
 
-    <footer></footer>
+    <footer>
+        <div class="footer-wrapper">
+            <div class="left-footer">
+                <img class="nav-image" src="images/cf_logo.svg"/>
+            </div>
+            <div class="right-footer">
+                <ul>
+                    <li>Facebook</li>
+                    <li>Linkedin</li>
+                    <li>Instagram</li>
+                    <li>Twitter</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </div>
 
 <script>
