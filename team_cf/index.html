@@ -194,6 +194,10 @@
             color: inherit;
             text-decoration: inherit;
         }
+        .cake-grid-image:hover {
+            opacity: 0.7;
+            transition: opacity 0.1s ease-in;
+        }
     </style>
 </head>
 <body>
@@ -231,27 +235,27 @@
             <h3 class="flavours-heading">Our Flavours</h3>
             <div class="cupcake-grid">
                 <figure>
-                    <img src="images/cupcake_grid/grid_beach.jpg"/>
+                    <img class="cake-grid-image" src="images/cupcake_grid/grid_beach.jpg"/>
                     <figcaption>Beach Fun</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/cupcake_grid/grid_caramel.jpg"/>
+                    <img class="cake-grid-image" src="images/cupcake_grid/grid_caramel.jpg"/>
                     <figcaption>Caramel Castle</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/cupcake_grid/grid_crunchie.jpg"/>
+                    <img class="cake-grid-image" src="images/cupcake_grid/grid_crunchie.jpg"/>
                     <figcaption>Big Crunchie</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/cupcake_grid/grid_dream.jpg"/>
+                    <img class="cake-grid-image" src="images/cupcake_grid/grid_dream.jpg"/>
                     <figcaption>Dream Big</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/cupcake_grid/grid_kitkat.jpg"/>
+                    <img class="cake-grid-image" src="images/cupcake_grid/grid_kitkat.jpg"/>
                     <figcaption>Kitkat Joy</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/cupcake_grid/grid_rainbow.jpg"/>
+                    <img class="cake-grid-image" src="images/cupcake_grid/grid_rainbow.jpg"/>
                     <figcaption>Rainbow Love</figcaption>
                 </figure>
             </div>
@@ -303,7 +307,10 @@
 </div>
 
 <script>
+    const onLoadHandler = () => {
 
+    };
+    window.addEventListener('load', onLoadHandler);
 </script>
 </body>
 </html>
